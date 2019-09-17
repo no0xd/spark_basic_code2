@@ -1,0 +1,32 @@
+WordCount
+
+    spark-submit --master yarn-client --class com.netposa.mr.WordCount spark_basic_code-1.0-SNAPSHOT.jar helloDir helloOutput7
+    spark-submit --master yarn-cluster --class com.netposa.mr.WordCount spark_basic_code-1.0-SNAPSHOT.jar helloDir helloOutput7
+
+
+    spark-submit --master spark://node0:7077 --class com.netposa.mr.WordCount spark_basic_code-1.0-SNAPSHOT.jar helloDir helloOutput22
+
+StreamingDemo
+
+    spark-submit --class com.netposa.stream.StreamingDemo spark_basic_code-1.0-SNAPSHOT.jar 10 helloDir
+
+
+
+
+
+StreamingSender
+
+    spark-submit --class com.netposa.stream.Sender spark_basic_code-1.0-SNAPSHOT.jar 2019 10
+
+StreamingByStatus
+
+    spark-submit --class com.netposa.stream.StreamingByStatus spark_basic_code-1.0-SNAPSHOT.jar 1 node0 2019
+
+StreamingByWindow
+
+    spark-submit --class com.netposa.stream.StreamingByWindow spark_basic_code-1.0-SNAPSHOT.jar 1 node0 2019 5 10
+
+StreamingByWindowNew
+
+    spark-submit --class com.netposa.stream.StreamingByWindowNew spark_basic_code-1.0-SNAPSHOT.jar 1 node0 2019 5 10
+
